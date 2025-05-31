@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Altuna Hyseni - Portfolio</title>
+  <style>
+    :root {
+      --bg: #121212;
+      --text: #ffffff;
+      --accent: #00bcd4;
+      --card-bg: #1e1e1e;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      color: var(--accent);
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    .project, .skill {
+      background: var(--card-bg);
+      padding: 15px;
+      border-radius: 8px;
+      margin: 10px 0;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background: #2c2c2c;
+      color: white;
+    }
+
+    button {
+      background: var(--accent);
+      border: none;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .socials a {
+      margin-right: 10px;
+    }
+
+    @media (max-width: 600px) {
+      body { padding: 15px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Altuna Hyseni</h1>
+    <p>Front-End Developer | Graphic Designer</p>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>I have successfully completed several projects using HTML, CSS, and JavaScript. I also have experience with graphic design using Adobe Illustrator and Photoshop.</p>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>FuturePulse</h3>
+      <p>A job platform built with HTML, CSS, and JavaScript.</p>
+    </div>
+    <div class="project">
+      <h3>FootballShop</h3>
+      <p>An online football gear store created using HTML and CSS.</p>
+    </div>
+    <div class="project">
+      <h3>Pharmacy Management</h3>
+      <p>A full-stack application for pharmacy management.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <div class="skill">HTML5, CSS3, JavaScript</div>
+    <div class="skill">Responsive Design</div>
+    <div class="skill">Adobe Illustrator, Adobe Photoshop</div>
+  </section>
+
+  <section>
+    <h2>Contact Me</h2>
+    <form action="https://formsubmit.co/altunahyseni18@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+
+     
+      <input type="hidden" name="_captcha" value="false">
+    </form>
+  </section>
+
+  <section>
+    <h2>Download CV</h2>
+    <a href="cv-altuna.pdf" download>Click here to download my CV (PDF)</a>
+  </section>
+
+  <section>
+    <h2>Social Links</h2>
+    <div class="socials">
+      <a href="https://github.com/" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
+      <a href="mailto:altunahyseni18@gmail.com">Email</a>
+    </div>
+  </section>
+
+</body>
+</html>
